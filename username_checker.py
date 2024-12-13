@@ -1,5 +1,10 @@
 #People Say You Can't Make A Telegram Username Checker With Only Requests So I Will Show Them How
-from requests import get as g
+#Check If Requests Module Installed
+try:
+    from requests import get as g
+#If Not Installed
+except ImportError:
+    print('Requests Module Not Installed Install It By This Command `pip install requests`')
 
 #Some Cute Vars
 usernames_file='users.txt'
